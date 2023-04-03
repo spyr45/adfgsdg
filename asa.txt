@@ -1,0 +1,22 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("sps", "BloodTheme")
+
+
+--main
+local Main = Window:NewTab("Main")
+local MainSection = Main:NewSection("Main")
+
+
+MainSection:NewButton("back/Front Flip", "makes you do gymnastics", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/7wDcPtLk"))()
+end)
+
+
+MainSection:NewToggle("walk speed", "go fast", function(state)
+    if state then
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 120
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 120
+    else
+        print("Toggle Off")
+    end
+end)
