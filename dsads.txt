@@ -1,18 +1,18 @@
-local Library = loadstring(gameHttpGet(httpsraw.githubusercontent.comxHeptcKavo-UI-Librarymainsource.lua))()
-local Window = Library.CreateLib(sps, BloodTheme)
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("sps", "BloodTheme")
 
 
 --main
-local Main = WindowNewTab(Main)
-local MainSection = MainNewSection(Main)
+local Main = Window:NewTab("Main")
+local MainSection = Main:NewSection("Main")
 
 
-MainSectionNewButton(backFront Flip, makes you do gymnastics, function()
-    loadstring(gameHttpGet(httpspastebin.comraw7wDcPtLk))()
+MainSection:NewButton("back/Front Flip", "makes you do gymnastics", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/7wDcPtLk"))()
 end)
 
 
-MainSectionNewToggle(walk speed, go fast, function(state)
+MainSection:NewToggle("walk speed", "go fast", function(state)
     if state then
         game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 120
         game.Players.LocalPlayer.Character.Humanoid.JumpPower = 120
@@ -24,6 +24,6 @@ end)
 
 
 
-MainSectionNewButton(Admin, Admin, function()
-    loadstring(gameHttpGet((httpsraw.githubusercontent.comEdgeIYinfiniteyieldmastersource),true))()
+MainSection:NewButton("Admin", "Admin", function()
+    loadstring(game:HttpGet(("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"),true))()
 end)
