@@ -1,0 +1,29 @@
+local Library = loadstring(gameHttpGet(httpsraw.githubusercontent.comxHeptcKavo-UI-Librarymainsource.lua))()
+local Window = Library.CreateLib(sps, BloodTheme)
+
+
+--main
+local Main = WindowNewTab(Main)
+local MainSection = MainNewSection(Main)
+
+
+MainSectionNewButton(backFront Flip, makes you do gymnastics, function()
+    loadstring(gameHttpGet(httpspastebin.comraw7wDcPtLk))()
+end)
+
+
+MainSectionNewToggle(walk speed, go fast, function(state)
+    if state then
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 120
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 120
+    else
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+    end
+end)
+
+
+
+MainSectionNewButton(Admin, Admin, function()
+    loadstring(gameHttpGet((httpsraw.githubusercontent.comEdgeIYinfiniteyieldmastersource),true))()
+end)
