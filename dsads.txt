@@ -27,3 +27,12 @@ end)
 MainSection:NewButton("Admin", "Admin", function()
     loadstring(game:HttpGet(("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"),true))()
 end)
+
+
+local Player = Window:NewTab("player")
+local PlayerSelection = Player:NewSection("player")
+
+PlayerSection:NewSlider("Walkspeed", "speed", 500, 16, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
