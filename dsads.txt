@@ -29,10 +29,15 @@ MainSection:NewButton("Admin", "Admin", function()
 end)
 
 
-local Player = Window:NewTab("player")
-local PlayerSelection = Player:NewSection("player")
+local Player = Window:NewTab("Player")
+local PlayerSelection = Player:NewSection("Player")
 
 PlayerSection:NewSlider("Walkspeed", "speed", 500, 16, function(s) -- 500 (MaxValue) | 0 (MinValue)
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
 end)
 
+
+MainSection:NewButton("Reset speed and jump", "resets speed and jump", function()
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+end)
